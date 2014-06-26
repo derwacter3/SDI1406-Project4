@@ -17,3 +17,14 @@ var fuzzyMatch = function (num,bottomnum,percent) {
 			return true;
 		};
 	};
+
+var timeBtDates = function (date1,date2) {
+		var results = [];
+		var difference = (date1 > date2) ? date1.getTime() - date2.getTime() : date2.getTime() - date1.getTime();
+		results[3] = difference / 1000;
+		results[2] = results[3] / 60;
+		results[1] = results[2] / 60;
+		results[0] = results[1] / 24;
+		return results;
+	};
+};
