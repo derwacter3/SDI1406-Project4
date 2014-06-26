@@ -28,3 +28,16 @@ var timeBtDates = function (date1,date2) {
 		return results;
 	};
 };
+
+  var stringToNumber = function (num) {
+		return Number(num);
+    };
+
+	return {
+		"twelvePackCost" : twelvePackCost,
+		"fuzzyMatch" : fuzzyMatch,
+		"timeBetweenDates" : timeBetweenDates,
+		"stringToNumber" : stringToNumber;
+		};
+	};
+};
