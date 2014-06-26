@@ -4,7 +4,7 @@
 // Project 4
 
 // Number Library
-var numberLibrary = function () {
+var numbLibrary = function () {
 var twelvePackCost = function (num,afterDecimal) {
         return Number(num.toFixed(afterDecimal));
     };
@@ -55,16 +55,26 @@ var ArrayLibrary = function () {
 		} else {
 			return null;
 		};
+		
+var totalValueNumberInArray = function (array) {
+		var total = 0;
+		for (var i = 0, j = array.length; i < j; i++) {
+			if (array[i]/1 === array[i]) {
+				total += array[i];
+			};
+		};
+		return total;
+	};
 
 // Number Testing
-var NumberLibrary = NumberLibrary ();
-console.log(NumberLibrary.twelvePackCost(5.926875,2));
-console.log(NumberLibrary.fuzzyMatch(72,12,16));
-console.log(NumberLibrary.fuzzyMatch(12,72,16));
+var NumLibrary = numbLibrary ();
+console.log(numbLibrary.twelvePackCost(5.926875,2));
+console.log(numbLibrary.fuzzyMatch(72,12,16));
+console.log(numbLibrary.fuzzyMatch(12,72,16));
 var date1 = new Date(2014,8,12);
 var date2 = new Date(2014,3,6);
-var timeConversion = NumberLibrary.timeBetweenDates(date1,date2);
+var timeConversion = numbLibrary.timeBetweenDates(date1,date2);
 console.log("Difference in days: " + timeConversion[0] + ", in hours: " + timeConversion[1]);
-console.log(numberLib.stringToNumber("3693"));
+console.log(numbLib.stringToNumber("3693"));
 console.log(" ");
 
