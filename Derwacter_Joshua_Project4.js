@@ -43,6 +43,19 @@ var timeBtDates = function (date1,date2) {
 	};
 };
 
+// Array Library
+var ArrayLibrary = function () {
+	var smallValueGreaterNumberInArray = function (array,num) {
+		array.sort(function(a,b){return a-b;});
+		if (num >= array[0] && num < array[array.length-1]) {
+			array.push(num);
+			array.sort(function(a,b){return a-b;});
+			var result = array[array.lastIndexOf(num) + 1];
+			return result;
+		} else {
+			return null;
+		};
+
 // Number Testing
 var NumberLibrary = NumberLibrary ();
 console.log(NumberLibrary.twelvePackCost(5.926875,2));
@@ -54,3 +67,4 @@ var timeConversion = NumberLibrary.timeBetweenDates(date1,date2);
 console.log("Difference in days: " + timeConversion[0] + ", in hours: " + timeConversion[1]);
 console.log(numberLib.stringToNumber("3693"));
 console.log(" ");
+
