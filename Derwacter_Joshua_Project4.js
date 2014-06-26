@@ -78,3 +78,9 @@ console.log("Difference in days: " + timeConversion[0] + ", in hours: " + timeCo
 console.log(numbLib.stringToNumber("3693"));
 console.log(" ");
 
+// Array Testing
+var arrayLib = ArrayLibrary();
+var numList = [1,5,9,10,12,2,4,8];
+console.log(arrayLib.smallValueGreaterNumberInArray(numList,1));
+var randomList = [23,"peach","penguin",32,66,"23"];
+console.log(arrayLib.totalValueNumberInArray(randomList));
