@@ -42,3 +42,15 @@ var timeBtDates = function (date1,date2) {
 		};
 	};
 };
+
+// Number Testing
+var NumberLibrary = NumberLibrary ();
+console.log(NumberLibrary.twelvePackCost(5.926875,2));
+console.log(NumberLibrary.fuzzyMatch(72,12,16));
+console.log(NumberLibrary.fuzzyMatch(12,72,16));
+var date1 = new Date(2014,8,12);
+var date2 = new Date(2014,3,6);
+var timeConversion = NumberLibrary.timeBetweenDates(date1,date2);
+console.log("Difference in days: " + timeConversion[0] + ", in hours: " + timeConversion[1]);
+console.log(numberLib.stringToNumber("3693"));
+console.log(" ");
