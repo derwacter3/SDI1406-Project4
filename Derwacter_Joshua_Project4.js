@@ -67,15 +67,15 @@ var totalValueNumberInArray = function (array) {
 	};
 
 // Number Testing
-var NumLibrary = numbLibrary ();
-console.log(numbLibrary.twelvePackCost(5.926875,2));
-console.log(numbLibrary.fuzzyMatch(72,12,16));
-console.log(numbLibrary.fuzzyMatch(12,72,16));
+var numLibrary = numbLibrary ();
+console.log(numLib.twelvePackCost(5.926875,2));
+console.log(numLib.fuzzyMatch(72,12,16));
+console.log(numLib.fuzzyMatch(12,72,16));
 var date1 = new Date(2014,8,12);
 var date2 = new Date(2014,3,6);
-var timeConversion = numbLibrary.timeBetweenDates(date1,date2);
+var timeConversion = numLib.timeBetweenDates(date1,date2);
 console.log("Difference in days: " + timeConversion[0] + ", in hours: " + timeConversion[1]);
-console.log(numbLib.stringToNumber("3693"));
+console.log(numLib.stringToNumber("3693"));
 console.log(" ");
 
 // Array Testing
